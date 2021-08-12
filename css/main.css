@@ -1,0 +1,53 @@
+/* ------------- =General -------------- */
+html {
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: Karma, serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image1" "image2"
+    "image3" "image4"
+    "image5" "image6"
+    "image7" "image8";
+  gap: 1rem;
+  padding: .25rem;
+}
+
+/* ------------- =card layout -------------- */
+
+ol li {
+  box-sizing: border-box;
+  padding: 18px;
+  border: 3px solid #987ffa;
+  border-radius: 8px;
+}
+
+/* ------------- =typography -------------- */
+
+li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+}
